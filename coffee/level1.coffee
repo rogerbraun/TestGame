@@ -1,4 +1,4 @@
-level1 = new Map(10,10)
+level1 = new Map(20,20)
 
 level1.register_image "g", "images/Grass Block.png"
 level1.register_image "w", "images/Water Block.png"
@@ -10,16 +10,26 @@ level1.register_image "t", "images/Tree Short.png"
 level1.register_image "e", "images/Gem Green.png"
 
 map_string = """
-             gggwwggggg 
-             wgdgggwddw
-             wwdggggwdw
-             wwdwwwgwww
-             wwdwwwgwww
-             wwdggggwww
-             wwgiiiigww
-             wwgiiiigww
-             wwwggggwww
-             wwwwwwwwww
+             gggwwggggggggwwggggg
+             wgdgggwddwgggwwggggg
+             wwdggggwdwgggwwggggg
+             wwdwwwgwwwgggwwggggg
+             wwdwwwgwwwgggwwggggg
+             wwgggwwgggggdggggwww
+             wwgiiiigwwgggwwggggg
+             wwgiiiigwwgggwwggggg
+             wwwggggwwwgggwwggggg
+             wwwwwwwwwwgggwwggggg
+             gggwwggggggggwwggggg
+             wgdgggwddwgggwwggggg
+             wwdggggwdwgggwwggggg
+             wwdwwwgwwwgggwwggggg
+             wwdwwwgwwwgggwwggggg
+             wwgggwwgggggdggggwww
+             wwgiiiigwwgggwwggggg
+             wwgiiiigwwgggwwggggg
+             wwwggggwwwgggwwggggg
+             wwwwwwwwwwgggwwggggg
              """
 
 level1.load_from_string map_string
