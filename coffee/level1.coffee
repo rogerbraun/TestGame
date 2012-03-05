@@ -13,8 +13,8 @@ map_string = """
              gggwwggggg 
              wgdgggwddw
              wwdggggwdw
-             wwdwwwwwww
-             wwdwwwwwww
+             wwdwwwgwww
+             wwdwwwgwww
              wwdggggwww
              wwgiiiigww
              wwgiiiigww

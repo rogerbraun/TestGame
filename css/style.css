@@ -1,4 +1,11 @@
-#canvas {
-  border-width: 1px;
-  border-style: dotted;
+html {
+  overflow: hidden;
+  height:100%;
 }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+

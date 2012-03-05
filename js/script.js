@@ -6,6 +6,8 @@ var startScreen = function(canvas, context) {
 
 $(function(){
   var canvas = $("#canvas")[0];
+  canvas.width = document.body.clientWidth;
+  canvas.height = document.body.clientHeight;
   var context = canvas.getContext("2d"); 
   startScreen(canvas, context);
 
