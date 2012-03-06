@@ -8,14 +8,16 @@ level1.register_image "b", "images/Character Boy.png"
 level1.register_image "c", "images/Character Cat Girl.png"
 level1.register_image "t", "images/Tree Short.png"
 level1.register_image "e", "images/Gem Green.png"
+level1.register_image "r", "images/Ramp South.png"
+level1.register_image "o", "images/Ramp East.png"
 
 map_string = """
              gggwwggggggggwwggggg
              wgdgggwddwgggwwggggg
-             wwdggggwdwgggwwggggg
+             wwdg ggwdwgggwwggggg
              wwdwwwgwwwgggwwggggg
-             wwdwwwgwwwgggwwggggg
-             wwgggwwgggggdggggwww
+             wwdwwwgw wgggwwggggg
+             wwgggddgggggdggggwww
              wwgiiiigwwgggwwggggg
              wwgiiiigwwgggwwggggg
              wwwggggwwwgggwwggggg
@@ -32,9 +34,28 @@ map_string = """
              wwwwwwwwwwgggwwggggg
              """
 
+second_layer = """
+               g gggg
+                g
+
+
+                 g
+               """
+third_layer = """
+              g  gg
+              """
+
 level1.load_from_string map_string
+level1.load_from_string second_layer, 1
+level1.load_from_string third_layer, 2
 level1.setItem(2,3,"b")
 level1.setItem(4,6,"c")
 level1.setItem(3,7,"t")
 level1.setItem(5,5,"t")
 level1.setItem(1,0,"e")
+level1.setItem(2,0,"c", 1)
+level1.setItem(2,1,"r", 0)
+level1.setItem(5,0,"o", 1)
+level1.setItem(6,0,"o", 0)
+level1.background = new Image
+level1.background.src = "images/spacebg.jpg"
